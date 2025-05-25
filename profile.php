@@ -13,54 +13,16 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" href="src/css/dashboard.css">
     <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Mark Attendance Button Styles */
-        .mark-attendance-btn {
-            background-color: white;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        .mark-attendance-btn:hover {
-            background-color: rgb(11, 132, 189);
-            transform: translateY(-2px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .mark-attendance-btn:active {
-            transform: translateY(0);
-        }
-
-        .mark-attendance-btn:disabled {
-            background-color: #f0f0f0;
-            color: #888;
-            cursor: not-allowed;
-        }
-
-        /* Style for the link containing the button */
-        .mark-attendance-btn-container {
-            display: block;
-            width: 100%;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/dashProfile.css">
+    
 </head>
 <body>
     <section id="section-heading">
         <div class="heading-container">
             <div class="left">
-                <a href="dashboard.php" class="logo"><img src="src/images/logo.png" alt=""></a>
+                <a href="home.php" class="logo"><img src="images/logo.png" alt=""></a>
                 <h2>Player Dashboard, Welcome.</h2>
                 <form action="" method="post">
                     <input type="search" name="search" id="search" placeholder="Search">
@@ -86,7 +48,7 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     
                 <div class="side-bar">
                     <ul>
-                        <li><a href="admin1.php">Admin Panel</a></li>
+                        <li><a href="home.php">Judge's Portal</a></li>
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <!-- <li><a href="teachers.php">Teachers</a></li>
                         <li><a href="classes.php">My classes</a></li> -->
@@ -101,163 +63,76 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
         <!-- end div-section-left -->
 
         <!-- start div-section-center -->
-        <div class="dash-section-center">
-            <div class="summary-heading">
-                <h2>Summary</h2>
-                <select name="semester" id="semester">
-                    <option value="1">Cyber Security</option>
-                    <option value="2">Software Development</option>
-                    <option value="2">Linux</option>
-                    <option value="2">Binary Exploitation</option>
-                    <option value="2">General Computing</option>
-                    <option value="2">Cryptography</option>
-                </select>
-            </div>
-    
-            <div class="summary-container">
-                <div class="summary-box">
-                    <h2>Attempted CTFs</h2>
-                    <div class="summary">
-                        <img src="images/dashboard/attendance.png" alt="">
-                        <h2><span>20</span>/20</h2>
-                        <p>100%</p>
-                    </div>
-                    <p>Solve challenges to upskill</p>
-                </div>
-                <div class="summary-box">
-                    <h2>Solved CTFs</h2>
-                    <div class="summary">
-                        <img src="images/dashboard/homework.png" alt="">
-                        <h2><span>19</span>/20 Challenges</h2>
-                        <p>100%</p>
-                    </div>
-                    <p>Don't forget about your next challenge</p>
-                </div>
-                <div class="summary-box">
-                    <h2>Ranking</h2>
-                    <div class="summary">
-                        <img src="images/dashboard/rating.png" alt="">
-                        <h2><span>85</span>/100 players</h2>
-                        <p>100%</p>
-                    </div>
-                    <p>There is no too late, start now.</p>
-                </div>
-            </div>
         
-            <div class="schedule-container">
-                <div class="schedule-heading">
-                    <h2>My Schedule</h2>
-                </div>
-    
-                <div class="calender-events">
-                    <div>
-                        <div class="calendar-header" style="display: flex; justify-content: center; align-items: center; ">
-                            <button id="prevMonthBtn" style="border-radius: 4px; padding: 5px; margin: 5px; background-color: rgb(15, 10, 90); color: white; text-align: center; display: inline-block;">Prev</button>
-                            <center style="background-color: rgb(15, 10, 90); padding: 5px; font-size: 25px; border-radius: 8px; color: white;" id="monthName"></center>
-                            <button id="nextMonthBtn" style="border-radius: 4px; padding: 5px; margin: 5px; background-color: rgb(15, 10, 90); color: white; text-align: center; display: inline-block;">Next</button>
-                        </div>
-                        <div id="calendar" style="height: 400px; width: 400px; margin: 10px; border-radius: 2px; box-shadow: 0 0 1px 3px rgb(197, 194, 194);">
-                        </div>
-                    </div>
-                    
-                    <div class="events">
-                        <div class="event-box">
-                            <h3 class="event-name">No CTF challenge at this time</h3>
-                            <div class="event-time">
-                                <p></p>
-                                <p></p>
-                            </div>
-                            <a href="#" class="mark-attendance-btn-container">
-                                <button class="mark-attendance-btn" disabled>No challenge to play</button>
-                            </a>
-                        </div>
-    
-                        <div class="event-box">
-                            <h3 class="event-name">No CTF challenge at this time</h3>
-                            <div class="event-time">
-                                <p></p>
-                                <p></p>
-                            </div>
-                            <a href="#" class="mark-attendance-btn-container">
-                                <button class="mark-attendance-btn" disabled>No challenge to play</button>
-                            </a>
-                        </div>
-    
-                        <div class="event-box">
-                            <h3 class="event-name">No CTF challenge at this time</h3>
-                            <div class="event-time">
-                                <p></p>
-                                <p></p>
-                            </div>
-                            <a href="#" class="mark-attendance-btn-container">
-                                <button class="mark-attendance-btn" disabled>No challenge to play</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- end div-section-center -->
 
         <div class="dash-section-right">
-            <div class="teacher-events-container">
-                <div class="teachers">
-                    <h2>Challenge Instructors and availabe Mentors</h2>
-                    <?php
-                    // Fetch teachers from database
-                    $teachers = []; // Replace with actual database query
-                    if (empty($teachers)) {
-                        // Default teacher data if none found
-                        $teachers = [
-                            ['name' => 'ctfRoom', 'subject' => 'All Round', 'email' => 'silamulingi@gmail.com'],
-                            ['name' => 'Steiner 254', 'subject' => 'all things security', 'email' => 'silamulingi@gmail.com'],
-                            ['name' => 'Sila Mulingi', 'subject' => 'Programming and Security', 'email' => 'silamulingi@gmail.com']
-                        ];
-                    }
-                    
-                    foreach ($teachers as $teacher): ?>
-                    <div class="teacher-box">
-                        <img src="src/images/profiles/ctfroom.png" alt="">
-                        <span><h2><?php echo htmlspecialchars($teacher['name']); ?></h2>
-                        <br>
-                        <p><?php echo htmlspecialchars($teacher['subject']); ?></p></span>
-                        <a href="mailto:<?php echo htmlspecialchars($teacher['email']); ?>"><i class="fa-solid fa-envelope-open-text"></i></a>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-
-                <div class="events">
-                    <h2>Up-Coming CTF Events</h2>
-                    <?php
-                    // Fetch events from database
-                    $events = []; // Replace with actual database query
-                    if (empty($events)) {
-                        // Default event data if none found
-                        $events = [
-                            ['title' => 'Coding: what is it eaten with', 'date' => '11.6.2025', 'time' => '14.00pm', 'image' => 'event1.jpg'],
-                            ['title' => 'Hacking: Api security: BOLA', 'date' => '30.5.2025', 'time' => '14.00pm', 'image' => 'event2.jpg'],
-                            ['title' => 'Security: Writing safe code', 'date' => '15.6.2025', 'time' => '14.00pm', 'image' => 'event3.jpg'],
-                            ['title' => 'Coding: what is it eaten with', 'date' => '10.7.2025', 'time' => '08.00pm', 'image' => 'event4.jpg']
-                        ];
-                    }
-                    
-                    foreach ($events as $event): ?>
-                    <div class="event-box">
-                        <div class="image">
-                            <img src="images/dashboard/<?php echo htmlspecialchars($event['image']); ?>" alt="">
-                        </div>
-
-                        <div class="title">
-                            <h2><?php echo htmlspecialchars($event['title']); ?></h2>
-                            <div class="time">
-                                <p><?php echo htmlspecialchars($event['date']); ?></p>
-                                <p><?php echo htmlspecialchars($event['time']); ?></p>
-                                <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <h1>My Profile</h1>
+                        <div class="profile-info">
+                            <div class="profile-name">
+                                <h2>{{student}}</h2>
+                                <p>{{student.course}}</p>
+                                <p>Machakos</p>
                             </div>
                         </div>
                     </div>
-                    <?php endforeach; ?>
+
+                <div class="personal-info">
+                    <h2 class="section-title">Personal Information</h2>
+                    <div class="info-group">
+                        <div class="info-row">
+                            <div class="info-label">First Name</div>
+                            <div class="info-label">Middle Name</div>
+                            <div class="info-label right">Last Name</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-value">{{student.first_name}}</div>
+                            <div class="info-value">{{student.middle_name}}</div>
+                            <div class="info-value">{{student.last_name}}</div>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <div class="info-row">
+                            <div class="info-label">Email address</div>
+                            <div class="info-label">Phone</div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-value">{{student.email}}</div>
+                            <div class="info-value">{{student.phone}}</div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="address-section">
+                    <h2 class="section-title">Course Details</h2>
+                    <div class="info-group">
+                        <div class="info-row">
+                            <div class="info-label">School</div>
+                            <div class="info-label right">Course</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-value">Engineering and Technology</div>
+                            <div class="info-value">Computer Science</div>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <div class="info-row">
+                            <div class="info-label">Reg Number</div>
+                            <div class="info-label right">Year of Study</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-value">{{student.username}}</div>
+                            <div class="info-value">4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="{% url 'profileUpdate' user.username %}" style="text-decoration: none;"><button class="edit-button">Edit</button></a>
             </div>
         </div>
     </section>

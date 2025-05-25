@@ -1,0 +1,414 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* [Previous normalize.css content remains exactly the same] */
+
+/* Admin Panel - Balanced Power Styling */
+:root {
+    --power-black: #111;
+    --power-red: #e63946;
+    --power-green: #2a9d8f;
+    --pure-white: #fff;
+    --light-gray: #f1faee;
+}
+
+#adminDash {
+    display: flex;
+    background-color: var(--light-gray);
+}
+
+#adminDash .leftSideNav {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--power-black);
+    color: var(--pure-white);
+    font-weight: bold;
+    font-size: 18px;
+    border-right: 4px solid var(--power-green);
+}
+
+#adminDash .leftSideNav a {
+    text-decoration: none;
+    color: var(--pure-white);
+    transition: all 0.3s ease;
+}
+
+#adminDash .leftSideNav a:hover {
+    color: var(--power-green);
+}
+
+#adminDash .leftSideNav h2 {
+    color: var(--power-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--power-red);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#adminDash .leftSideNav .sideNavButtons1 {
+    display: flex;
+}
+
+#adminDash .leftSideNav .fa-solid {
+    margin-right: 15px;
+    color: var(--power-green);
+}
+
+#adminDash .leftSideNav li {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    transition: all 0.3s;
+}
+
+#adminDash .leftSideNav li:hover {
+    background-color: var(--power-red);
+    color: var(--pure-white);
+    transform: translateX(5px);
+}
+
+#adminDash .leftSideNav hr {
+    width: 90%;
+    border-color: var(--power-red);
+}
+
+#adminDash .studentQueries {
+    width: 85%;
+    padding: 25px;
+    margin-left: 300px;
+    margin-top: 0;
+    background-color: var(--pure-white);
+    color: var(--power-black);
+}
+
+#adminDash .studentQueries .heading {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--power-black) 0%, var(--power-black) 50%, var(--power-green) 100%);
+    color: var(--pure-white);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#adminDash .studentQueries .heading .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adminDash .studentQueries .heading .title h1 {
+    color: var(--pure-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.2rem;
+}
+
+#adminDash .studentQueries .heading .title .actionButtons {
+    margin-right: 15px;
+}
+
+#adminDash .studentQueries .heading .title .actionButtons .btn-add {
+    background-color: var(--power-green);
+    color: var(--pure-white);
+    font-weight: bold;
+    border: 2px solid var(--pure-white);
+}
+
+#adminDash .studentQueries .heading .title button {
+    padding: 12px 20px;
+    color: var(--pure-white);
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#adminDash .studentQueries .heading .title button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#adminDash .studentQueries .heading .filters label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--pure-white);
+    margin-right: 10px;
+}
+
+#adminDash .studentQueries .heading .filters select {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 2px solid var(--power-green);
+    background-color: var(--pure-white);
+    color: var(--power-black);
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#adminDash .studentQueries .heading .filters button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--power-red);
+    color: var(--pure-white);
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#adminDash .studentQueries .heading .filters button[type="submit"]:hover {
+    background-color: var(--power-green);
+    transform: translateY(-2px);
+}
+
+#adminDash .studentQueries .results {
+    width: 100%;
+    padding: 25px;
+    background-color: var(--pure-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#adminDash .studentQueries .results h1 {
+    color: var(--power-black);
+    border-bottom: 3px solid var(--power-green);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+table {
+    width: 100%;
+    font-size: 16px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(to right, var(--power-black), var(--power-green));
+    color: var(--pure-white);
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background-color: rgba(42, 157, 143, 0.1);
+    transform: scale(1.01);
+}
+
+table .btn {
+    padding: 8px 15px;
+    color: var(--pure-white);
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+table .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table .btn-update {
+    background-color: var(--power-green);
+}
+
+table .btn-delete {
+    background-color: var(--power-red);
+}
+
+table .btn-view {
+    background-color: var(--power-black);
+    color: var(--pure-white);
+}
+
+table .btn-contact {
+    background-color: var(--pure-white);
+    color: var(--power-black);
+    border: 2px solid var(--power-green);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: var(--pure-white);
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid var(--power-green);
+}
+
+.modal-content h2 {
+    color: var(--power-black);
+    border-bottom: 2px solid var(--power-red);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.close {
+    color: var(--power-red);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: var(--power-black);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--power-black);
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+    border: 2px solid #ddd;
+    color: var(--power-black);
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--power-green);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+.form-submit {
+    background-color: var(--power-green);
+    color: var(--pure-white);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.form-submit:hover {
+    background-color: var(--power-black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    #adminDash .leftSideNav {
+        width: 250px;
+    }
+
+    #adminDash .studentQueries {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .modal-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    #adminDash {
+        flex-direction: column;
+    }
+
+    #adminDash .leftSideNav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #adminDash .studentQueries {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .modal-content {
+        width: 85%;
+        margin: 20% auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #adminDash .studentQueries .heading .title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #adminDash .studentQueries .heading .title .actionButtons {
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    } }
