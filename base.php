@@ -16,6 +16,7 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="src/css/dashProfile.css">
+    <link rel="stylesheet" href="src/css/profile.css">
     
 </head>
 <body>
@@ -48,14 +49,14 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     
                 <div class="side-bar">
                     <ul>
-                        <li><a href="home.php">Judge's Portal</a></li>
+                        <li><a href="admin.php">Admin Panel</a></li>
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <!-- <li><a href="teachers.php">Teachers</a></li>
                         <li><a href="classes.php">My classes</a></li> -->
-                        <li><a href="planning.php">Schedule</a></li>
-                        <li><a href="messages.php">Messages</a></li>
+                        <!-- <li><a href="planning.php">Schedule</a></li> -->
+                        <li><a href="scoreboard.php">Score Board</a></li>
                         <li><a href="profile.php">Profile and Settings</a></li>
-                        <li><a href="profile.php">logout</a></li>
+                        <!-- <li><a href="logout.php">logout</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -67,14 +68,11 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
         <!-- end div-section-center -->
 
         <div class="dash-section-right">
-
-                content
-
+               
+                       
         </div>
-            
     </section>
 
-    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
     
 </body>
 </html>

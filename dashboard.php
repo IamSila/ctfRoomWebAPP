@@ -52,8 +52,8 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <!-- <li><a href="teachers.php">Teachers</a></li>
                         <li><a href="classes.php">My classes</a></li> -->
-                        <li><a href="planning.php">Score Board</a></li>
-                        <li><a href="scoreboard.php">Messages</a></li>
+                        <li><a href="scoreboard.php">Score Board</a></li>
+                        <!-- <li><a href="scoreboard.php">Messages</a></li> -->
                         <li><a href="profile.php">Profile and Settings</a></li>
                         <!-- <li><a href="logout.php">logout</a></li> -->
                     </ul>
