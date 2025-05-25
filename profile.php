@@ -15,7 +15,7 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     <title>Student Dashboard</title>
     <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="src/css/dashProfile.css">
+    <link rel="stylesheet" href="src/css/dash1.css">
     
 </head>
 <body>
@@ -48,11 +48,11 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     
                 <div class="side-bar">
                     <ul>
-                        <li><a href="home.php">Judge's Portal</a></li>
+                        <li><a href="admin1.php">Admin Panel</a></li>
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <!-- <li><a href="teachers.php">Teachers</a></li>
                         <li><a href="classes.php">My classes</a></li> -->
-                        <li><a href="planning.php">Schedule</a></li>
+                        <!-- <li><a href="planning.php">Schedule</a></li> -->
                         <li><a href="messages.php">Messages</a></li>
                         <li><a href="profile.php">Profile and Settings</a></li>
                         <li><a href="logout.php">logout</a></li>

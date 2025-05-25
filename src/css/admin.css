@@ -1,478 +1,98 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* [Previous normalize.css content remains exactly the same] */
 
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-html {
-    line-height: 1.15;
-    /* 1 */
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
+/* Admin Panel - Balanced Power Styling */
+:root {
+    --power-black: #111;
+    --power-red: #e63946;
+    --power-green: #2a9d8f;
+    --pure-white: #fff;
+    --light-gray: #f1faee;
 }
-
-/* Sections
-     ========================================================================== */
-
-/**
-   * Remove the margin in all browsers.
-   */
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/**
-   * Render the `main` element consistently in IE.
-   */
-
-main {
-    display: block;
-}
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-/* Grouping content
-     ========================================================================== */
-
-/**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-
-hr {
-    box-sizing: content-box;
-    /* 1 */
-    height: 0;
-    /* 1 */
-    overflow: visible;
-    /* 2 */
-}
-
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-
-pre {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: 1em;
-    /* 2 */
-}
-
-/* Text-level semantics
-     ========================================================================== */
-
-/**
-   * Remove the gray background on active links in IE 10.
-   */
-
-a {
-    background-color: transparent;
-}
-
-/**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-
-abbr[title] {
-    border-bottom: none;
-    /* 1 */
-    text-decoration: underline;
-    /* 2 */
-    text-decoration: underline dotted;
-    /* 2 */
-}
-
-/**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-
-b,
-strong {
-    font-weight: bolder;
-}
-
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-
-code,
-kbd,
-samp {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: 1em;
-    /* 2 */
-}
-
-/**
-   * Add the correct font size in all browsers.
-   */
-
-small {
-    font-size: 80%;
-}
-
-/**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
-}
-
-/* Embedded content
-     ========================================================================== */
-
-/**
-   * Remove the border on images inside links in IE 10.
-   */
-
-img {
-    border-style: none;
-}
-
-/* Forms
-     ========================================================================== */
-
-/**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    /* 1 */
-    font-size: 100%;
-    /* 1 */
-    line-height: 1.15;
-    /* 1 */
-    margin: 0;
-    /* 2 */
-}
-
-/**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
-
-button,
-input {
-    /* 1 */
-    overflow: visible;
-}
-
-/**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-
-button,
-select {
-    /* 1 */
-    text-transform: none;
-}
-
-/**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
-
-/**
-   * Remove the inner border and padding in Firefox.
-   */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-}
-
-/**
-   * Restore the focus styles unset by the previous rule.
-   */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-}
-
-/**
-   * Correct the padding in Firefox.
-   */
-
-fieldset {
-    padding: 0.35em 0.75em 0.625em;
-}
-
-/**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
-
-legend {
-    box-sizing: border-box;
-    /* 1 */
-    color: inherit;
-    /* 2 */
-    display: table;
-    /* 1 */
-    max-width: 100%;
-    /* 1 */
-    padding: 0;
-    /* 3 */
-    white-space: normal;
-    /* 1 */
-}
-
-/**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-
-progress {
-    vertical-align: baseline;
-}
-
-/**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-
-textarea {
-    overflow: auto;
-}
-
-/**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-
-[type="checkbox"],
-[type="radio"] {
-    box-sizing: border-box;
-    /* 1 */
-    padding: 0;
-    /* 2 */
-}
-
-/**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-/**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-
-[type="search"] {
-    -webkit-appearance: textfield;
-    /* 1 */
-    outline-offset: -2px;
-    /* 2 */
-}
-
-/**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-
-[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-/**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    /* 1 */
-    font: inherit;
-    /* 2 */
-}
-
-/* Interactive
-     ========================================================================== */
-
-/*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
-
-details {
-    display: block;
-}
-
-/*
-   * Add the correct display in all browsers.
-   */
-
-summary {
-    display: list-item;
-}
-
-/* Misc
-     ========================================================================== */
-
-/**
-   * Add the correct display in IE 10+.
-   */
-
-template {
-    display: none;
-}
-
-/**
-   * Add the correct display in IE 10.
-   */
-
-[hidden] {
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
 
 #adminDash {
     display: flex;
+    background-color: var(--light-gray);
 }
-
-
 
 #adminDash .leftSideNav {
     position: fixed;
     height: 100vh;
-    /* border: 1px solid red; */
     width: 300px;
-    background-color: black;
-    color: #899499;
+    background-color: var(--power-black);
+    color: var(--pure-white);
     font-weight: bold;
     font-size: 18px;
-
-
+    border-right: 4px solid var(--power-green);
 }
 
 #adminDash .leftSideNav a {
     text-decoration: none;
-    color: #899499;
+    color: var(--pure-white);
+    transition: all 0.3s ease;
+}
+
+#adminDash .leftSideNav a:hover {
+    color: var(--power-green);
 }
 
 #adminDash .leftSideNav h2 {
-    color: white;
+    color: var(--power-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--power-red);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #adminDash .leftSideNav .sideNavButtons1 {
-    /* border: 1px yellow solid; */
     display: flex;
-
-
 }
 
 #adminDash .leftSideNav .fa-solid {
     margin-right: 15px;
+    color: var(--power-green);
 }
 
 #adminDash .leftSideNav li {
     list-style-type: none;
     text-decoration: none;
     text-align: left;
-    padding: 5px;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    transition: all 0.3s;
+}
 
-
+#adminDash .leftSideNav li:hover {
+    background-color: var(--power-red);
+    color: var(--pure-white);
+    transform: translateX(5px);
 }
 
 #adminDash .leftSideNav hr {
     width: 90%;
-    color: #899499;
-}
-
-@media (max-width: 900px) {
-    #adminDash .leftSideNav {
-        width: 50%;
-    }
-}
-
-@media (min-width: 900px) {
-    #adminDash .leftSideNav {
-        width: 300px;
-    }
+    border-color: var(--power-red);
 }
 
 #adminDash .studentQueries {
     width: 85%;
-    /* box-shadow: 0 0 1px 3px rgb(90, 88, 88); */
-    padding: 15px;
+    padding: 25px;
     margin-left: 300px;
     margin-top: 0;
-
+    background-color: var(--pure-white);
+    color: var(--power-black);
 }
 
 #adminDash .studentQueries .heading {
-    height: 20vh;
     width: 100%;
-    border-bottom: 1px rgb(90, 88, 88) solid;
-    /* margin-left: 5px; */
-    box-shadow: 0 0 1px 3px rgb(90, 88, 88);
-    padding: 5px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--power-black) 0%, var(--power-black) 50%, var(--power-green) 100%);
+    color: var(--pure-white);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-
 
 #adminDash .studentQueries .heading .title {
     display: flex;
@@ -480,152 +100,315 @@ template {
     align-items: center;
 }
 
+#adminDash .studentQueries .heading .title h1 {
+    color: var(--pure-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.2rem;
+}
+
 #adminDash .studentQueries .heading .title .actionButtons {
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 #adminDash .studentQueries .heading .title .actionButtons .btn-add {
-    /* background-color: green; */
-    color: white;
-
+    background-color: var(--power-green);
+    color: var(--pure-white);
+    font-weight: bold;
+    border: 2px solid var(--pure-white);
 }
 
 #adminDash .studentQueries .heading .title button {
-    padding: 7px;
-    color: white;
-    font-size: 18px;
-    border-radius: 8px;
+    padding: 12px 20px;
+    color: var(--pure-white);
+    font-size: 1rem;
+    border-radius: 6px;
     border: none;
     margin-right: 10px;
-    transition: 1s;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-#adminDash .studentQueries .heading .title button:nth-child(1) {
-    color: white;
-    background-color: black;
+#adminDash .studentQueries .heading .title button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-#adminDash .studentQueries .heading .title button:nth-child(2) {
-    color: black;
-    background-color: white;
-    border: 1px solid rgb(190, 188, 188);
-}
-
-#adminDash .studentQueries .heading .filters {}
 
 #adminDash .studentQueries .heading .filters label {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
+    color: var(--pure-white);
+    margin-right: 10px;
 }
 
 #adminDash .studentQueries .heading .filters select {
-    padding: 5px;
-    border-radius: 8px;
-    border: 1px solid black;
-    text-align: center;
-    /* background-color: blue; */
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 2px solid var(--power-green);
+    background-color: var(--pure-white);
+    color: var(--power-black);
+    font-weight: bold;
+    margin-right: 15px;
 }
 
 #adminDash .studentQueries .heading .filters button[type="submit"] {
-    padding: 5px;
-    border-radius: 8px;
-    box-shadow: 0 0 1px 1px rgba(200, 200, 200, 0.922);
-    transition: 1s ease;
-    background-color: black;
-    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--power-red);
+    color: var(--pure-white);
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
 }
 
 #adminDash .studentQueries .heading .filters button[type="submit"]:hover {
-    transform: scale(1.15);
+    background-color: var(--power-green);
+    transform: translateY(-2px);
 }
-
-
 
 #adminDash .studentQueries .results {
-    height: 80vh;
     width: 100%;
-    /* border: 2px red solid; */
-    /* margin-left: 5px; */
-    box-shadow: 0 0 1px 3px rgb(90, 88, 88);
-    padding: 5px;
-}
-
-#adminDash .studentQueries .results .controls {
-    font-size: 18px;
-}
-
-#adminDash .studentQueries .results .controls input {
-    padding: 5px;
+    padding: 25px;
+    background-color: var(--pure-white);
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#adminDash .studentQueries .results .controls button {
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border-radius: 8px;
+#adminDash .studentQueries .results h1 {
+    color: var(--power-black);
+    border-bottom: 3px solid var(--power-green);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
 }
 
-#adminDash .studentQueries .results .edits {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    width: 60px;
-    background-color: black;
+table {
+    width: 100%;
+    font-size: 16px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 
-#adminDash .studentQueries .results .hidden {
-  display: none;
-} */
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
 
-/* #adminDash .studentQueries .results .actions {
-  padding: 7px;
-  color: white;
-  font-size: 10px;
-  border-radius: 8px;
-  border: none;
-  margin-right: 10px;
-  transition: 1s;
-} */
+th {
+    background: linear-gradient(to right, var(--power-black), var(--power-green));
+    color: var(--pure-white);
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-#adminDash .studentQueries .results table .actions .btn {
-    /* padding: 5px; */
-    /* color: white; */
-    font-size: 5px;
-    border-radius: 8px;
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background-color: rgba(42, 157, 143, 0.1);
+    transform: scale(1.01);
+}
+
+table .btn {
+    padding: 8px 15px;
+    color: var(--pure-white);
+    font-size: 14px;
+    border-radius: 6px;
     border: none;
-    margin-right: 0;
-    transition: 1s;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
 }
 
-#adminDash .studentQueries .results .btn-actions {
-    border-radius: 50%;
-    background-color: green;
-    color: white;
+table .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table .btn-update {
+    background-color: var(--power-green);
+}
+
+table .btn-delete {
+    background-color: var(--power-red);
+}
+
+table .btn-view {
+    background-color: var(--power-black);
+    color: var(--pure-white);
+}
+
+table .btn-contact {
+    background-color: var(--pure-white);
+    color: var(--power-black);
+    border: 2px solid var(--power-green);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: var(--pure-white);
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid var(--power-green);
+}
+
+.modal-content h2 {
+    color: var(--power-black);
+    border-bottom: 2px solid var(--power-red);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.close {
+    color: var(--power-red);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: var(--power-black);
+    transform: rotate(90deg);
     cursor: pointer;
 }
 
-#adminDash .studentQueries .results .edits .btn-close {
-    border-radius: 50%;
-    background-color: firebrick;
-    color: white;
+.form-group {
+    margin-bottom: 25px;
 }
 
-#adminDash .studentQueries .results .actions .btn-update {
-    background-color: green;
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--power-black);
+    font-weight: bold;
 }
 
-#adminDash .studentQueries .results .edits .btn-delete {
-    background-color: firebrick;
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+    border: 2px solid #ddd;
+    color: var(--power-black);
+    border-radius: 6px;
+    transition: all 0.3s;
 }
 
-#adminDash .studentQueries .results .edits .btn-view {
-    background-color: orange;
+.form-group input:focus {
+    border-color: var(--power-green);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
 }
 
-#adminDash .studentQueries .results .edits .btn-contact {
-    background-color: rgb(0, 132, 255);
+.form-submit {
+    background-color: var(--power-green);
+    color: var(--pure-white);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
 }
+
+.form-submit:hover {
+    background-color: var(--power-black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    #adminDash .leftSideNav {
+        width: 250px;
+    }
+
+    #adminDash .studentQueries {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .modal-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    #adminDash {
+        flex-direction: column;
+    }
+
+    #adminDash .leftSideNav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #adminDash .studentQueries {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .modal-content {
+        width: 85%;
+        margin: 20% auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #adminDash .studentQueries .heading .title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #adminDash .studentQueries .heading .title .actionButtons {
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    } }

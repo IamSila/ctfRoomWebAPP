@@ -13,48 +13,10 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" href="src/css/dashboard.css">
     <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Mark Attendance Button Styles */
-        .mark-attendance-btn {
-            background-color: white;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            width: 100%;
-            margin-top: 10px;
-        }
+    <link rel="stylesheet" href="src/css/dashProfile.css">
 
-        .mark-attendance-btn:hover {
-            background-color: rgb(11, 132, 189);
-            transform: translateY(-2px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .mark-attendance-btn:active {
-            transform: translateY(0);
-        }
-
-        .mark-attendance-btn:disabled {
-            background-color: #f0f0f0;
-            color: #888;
-            cursor: not-allowed;
-        }
-
-        /* Style for the link containing the button */
-        .mark-attendance-btn-container {
-            display: block;
-            width: 100%;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
     <section id="section-heading">
@@ -86,7 +48,7 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
     
                 <div class="side-bar">
                     <ul>
-                        <li><a href="admin1.php">Admin Panel</a></li>
+                        <li><a href="admin.php">Admin Panel</a></li>
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <!-- <li><a href="teachers.php">Teachers</a></li>
                         <li><a href="classes.php">My classes</a></li> -->

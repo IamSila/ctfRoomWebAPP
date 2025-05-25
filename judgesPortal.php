@@ -7,7 +7,7 @@
 
     <!-- cdn link for all favicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="src/css/admin1.css">
+    <link rel="stylesheet" href="src/css/admin.css">
 
     <style>
         table {
@@ -138,9 +138,9 @@
             <center><h2>Admin Dashboard</h2></center>
             <div class="sideNavButtons1">
                 <ul>
-                    <a href="admin1.php"><li><i class="fa-solid fa-rectangle-list"></i>Admin Panel</li></a>
+                    <a href="admin.php"><li><i class="fa-solid fa-rectangle-list"></i>Admin Panel</li></a>
                     <a href="judgesPortal.php"><li><i class="fa-solid fa-rectangle-list"></i>Judge Portal</li></a>
-                    <a href="attendanceRecords.php"><li><i class="fa-solid fa-book-open-reader"></i>Player Records</li></a>
+                    <a href="dashboard.php"><li><i class="fa-solid fa-book-open-reader"></i>User Dashboard</li></a>
                     <a href=""><li><i class="fa-solid fa-chart-line"></i>Analytics</li></a>
                 </ul>
             </div>
