@@ -161,35 +161,35 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
                     
                     <div class="events">
                         <div class="event-box">
-                            <h3 class="event-name">No class at this time</h3>
+                            <h3 class="event-name">No CTF challenge at this time</h3>
                             <div class="event-time">
                                 <p></p>
                                 <p></p>
                             </div>
                             <a href="#" class="mark-attendance-btn-container">
-                                <button class="mark-attendance-btn" disabled>No class to mark</button>
+                                <button class="mark-attendance-btn" disabled>No challenge to play</button>
                             </a>
                         </div>
     
                         <div class="event-box">
-                            <h3 class="event-name">No class at this time</h3>
+                            <h3 class="event-name">No CTF challenge at this time</h3>
                             <div class="event-time">
                                 <p></p>
                                 <p></p>
                             </div>
                             <a href="#" class="mark-attendance-btn-container">
-                                <button class="mark-attendance-btn" disabled>No class to mark</button>
+                                <button class="mark-attendance-btn" disabled>No challenge to play</button>
                             </a>
                         </div>
     
                         <div class="event-box">
-                            <h3 class="event-name">No class at this time</h3>
+                            <h3 class="event-name">No CTF challenge at this time</h3>
                             <div class="event-time">
                                 <p></p>
                                 <p></p>
                             </div>
                             <a href="#" class="mark-attendance-btn-container">
-                                <button class="mark-attendance-btn" disabled>No class to mark</button>
+                                <button class="mark-attendance-btn" disabled>No challenge to play</button>
                             </a>
                         </div>
                     </div>
