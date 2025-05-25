@@ -138,6 +138,7 @@
             <center><h2>Admin Dashboard</h2></center>
             <div class="sideNavButtons1">
                 <ul>
+                    <a href="admin1.php"><li><i class="fa-solid fa-rectangle-list"></i>Admin Panel</li></a>
                     <a href="judgesPortal.php"><li><i class="fa-solid fa-rectangle-list"></i>Judge Portal</li></a>
                     <a href="attendanceRecords.php"><li><i class="fa-solid fa-book-open-reader"></i>Player Records</li></a>
                     <a href=""><li><i class="fa-solid fa-chart-line"></i>Analytics</li></a>
@@ -161,7 +162,7 @@
         <div class="title">
             <h1>Participants Management</h1>
             <div class="actionButtons">
-                <button id="assignPointsBtn" class="btn-add"><i class="fa-solid fa-plus"></i>Assign Points</button>
+                <!-- <button id="assignPointsBtn" class="btn-add"><i class="fa-solid fa-plus"></i>Assign Points</button> -->
             </div>
         </div>
         <div class="filters">
