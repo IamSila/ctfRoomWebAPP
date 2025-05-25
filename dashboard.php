@@ -196,17 +196,17 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
                     if (empty($events)) {
                         // Default event data if none found
                         $events = [
-                            ['title' => 'Coding: what is it eaten with', 'date' => '11.6.2025', 'time' => '14.00pm', 'image' => 'event1.jpg'],
-                            ['title' => 'Hacking: Api security: BOLA', 'date' => '30.5.2025', 'time' => '14.00pm', 'image' => 'event2.jpg'],
-                            ['title' => 'Security: Writing safe code', 'date' => '15.6.2025', 'time' => '14.00pm', 'image' => 'event3.jpg'],
-                            ['title' => 'Coding: what is it eaten with', 'date' => '10.7.2025', 'time' => '08.00pm', 'image' => 'event4.jpg']
+                            ['title' => 'Coding: what is it eaten with', 'date' => '11.6.2025', 'time' => '14.00pm', 'image' => 'event1.png'],
+                            ['title' => 'Hacking: Api security: BOLA', 'date' => '30.5.2025', 'time' => '14.00pm', 'image' => 'event2.png'],
+                            ['title' => 'Security: Writing safe code', 'date' => '15.6.2025', 'time' => '14.00pm', 'image' => 'event3.png'],
+                            ['title' => 'Coding: what is it eaten with', 'date' => '10.7.2025', 'time' => '08.00pm', 'image' => 'event4.png']
                         ];
                     }
                     
                     foreach ($events as $event): ?>
                     <div class="event-box">
                         <div class="image">
-                            <img src="images/dashboard/<?php echo htmlspecialchars($event['image']); ?>" alt="">
+                            <img src="src/images/events/<?php echo htmlspecialchars($event['image']); ?>" alt="">
                         </div>
 
                         <div class="title">
