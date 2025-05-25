@@ -172,7 +172,7 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
                         // Default teacher data if none found
                         $teachers = [
                             ['name' => 'ctfRoom', 'subject' => 'All Round', 'email' => 'silamulingi@gmail.com'],
-                            ['name' => 'Steiner 254', 'subject' => 'all things security', 'email' => 'silamulingi@gmail.com'],
+                            ['name' => 'r3c0n', 'subject' => 'all things security', 'email' => 'silamulingi@gmail.com'],
                             ['name' => 'Sila Mulingi', 'subject' => 'Programming and Security', 'email' => 'silamulingi@gmail.com']
                         ];
                     }

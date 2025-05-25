@@ -138,7 +138,7 @@
             <center><h2>Admin Dashboard</h2></center>
             <div class="sideNavButtons1">
                 <ul>
-                    <a href="admin1.php"><li><i class="fa-solid fa-rectangle-list"></i>Admin Panel</li></a>
+                    <a href="admin.php"><li><i class="fa-solid fa-rectangle-list"></i>Admin Panel</li></a>
                     <a href="judgesPortal.php"><li><i class="fa-solid fa-rectangle-list"></i>Judge Portal</li></a>
                     <a href="dashboard.php"><li><i class="fa-solid fa-book-open-reader"></i>User Dashboard</li></a>
                     <a href=""><li><i class="fa-solid fa-chart-line"></i>Analytics</li></a>
