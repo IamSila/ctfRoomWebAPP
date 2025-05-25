@@ -201,16 +201,16 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
         <div class="dash-section-right">
             <div class="teacher-events-container">
                 <div class="teachers">
-                    <h2>My Teachers</h2>
+                    <h2>Challenge Instructors and availabe Mentors</h2>
                     <?php
                     // Fetch teachers from database
                     $teachers = []; // Replace with actual database query
                     if (empty($teachers)) {
                         // Default teacher data if none found
                         $teachers = [
-                            ['name' => 'Sila Mulingi', 'subject' => 'Javascript and C', 'email' => 'silamulingi@gmail.com'],
-                            ['name' => 'Sila Mulingi', 'subject' => 'Javascript and C', 'email' => 'silamulingi@gmail.com'],
-                            ['name' => 'Sila Mulingi', 'subject' => 'Javascript and C', 'email' => 'silamulingi@gmail.com']
+                            ['name' => 'Sila Mulingi', 'subject' => 'Programming and Security', 'email' => 'silamulingi@gmail.com'],
+                            ['name' => 'Steiner 254', 'subject' => 'all things security', 'email' => 'silamulingi@gmail.com'],
+                            ['name' => 'Bright Gameli', 'subject' => 'Security', 'email' => 'silamulingi@gmail.com']
                         ];
                     }
                     
@@ -234,8 +234,8 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
                         // Default event data if none found
                         $events = [
                             ['title' => 'Coding: what is it eaten with', 'date' => '11.3.2025', 'time' => '14.00pm', 'image' => 'event1.jpg'],
-                            ['title' => 'Coding: what is it eaten with', 'date' => '11.3.2025', 'time' => '14.00pm', 'image' => 'event2.jpg'],
-                            ['title' => 'Coding: what is it eaten with', 'date' => '11.3.2025', 'time' => '14.00pm', 'image' => 'event3.jpg'],
+                            ['title' => 'Hacking: Api security: BOLA', 'date' => '11.3.2025', 'time' => '14.00pm', 'image' => 'event2.jpg'],
+                            ['title' => 'Security: Writing safe code', 'date' => '11.3.2025', 'time' => '14.00pm', 'image' => 'event3.jpg'],
                             ['title' => 'Coding: what is it eaten with', 'date' => '11.3.2025', 'time' => '14.00pm', 'image' => 'event4.jpg']
                         ];
                     }
