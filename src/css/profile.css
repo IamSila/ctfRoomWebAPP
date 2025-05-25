@@ -1,0 +1,181 @@
+/* Right Sidebar Styles */
+.dash-section-right {
+    background-color: var(--neutral-dark);
+    padding: 50px;
+    margin: 100px;
+    border-left: 1px solid var(--primary-accent);
+    width: 100%;
+}
+
+/* Main profile container */
+.features .profile-container {
+    width: 100%;
+    margin-left: 100px;
+    background-color: var(--neutral-dark);
+    /* Dark grey */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border: 1px solid var(--neutral-mid);
+    /* Medium grey border */
+}
+
+/* Profile header section */
+.profile-header {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(30, 30, 30, 0.8);
+    /* Dark grey */
+    border: 1px solid var(--neutral-mid);
+    /* Medium grey */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container .personal-info {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    /* Dark grey */
+    border: 1px solid var(--neutral-mid);
+    /* Medium grey */
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    color: var(--neutral-light);
+    /* White */
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--neutral-mid);
+    /* Medium grey */
+    padding-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-name h2 {
+    font-size: 20px;
+    color: var(--neutral-light);
+    /* White */
+    margin-bottom: 5px;
+}
+
+.profile-name p {
+    color: var(--neutral-mid);
+    /* Medium grey */
+    font-size: 14px;
+}
+
+/* Personal information section */
+.section-title {
+    font-size: 18px;
+    color: var(--neutral-light);
+    /* White */
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--neutral-mid);
+    /* Medium grey */
+    padding-bottom: 5px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(40, 40, 40, 0.6);
+    /* Dark grey */
+    border-radius: 4px;
+    border-left: 3px solid var(--primary-accent);
+    /* Green accent */
+}
+
+.info-row:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+    /* Slightly lighter grey */
+}
+
+.info-label {
+    width: 150px;
+    color: var(--neutral-mid);
+    /* Medium grey */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-value {
+    flex: 1;
+    color: var(--neutral-light);
+    /* White */
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Bio and Address sections */
+.bio-section,
+.address-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    /* Dark grey */
+    border: 1px solid var(--neutral-mid);
+    /* Medium grey */
+    border-radius: 8px;
+}
+
+/* Edit button */
+.edit-button {
+    background-color: var(--neutral-dark);
+    /* Dark grey */
+    color: var(--primary-accent);
+    /* Green text */
+    border: 1px solid var(--primary-accent);
+    /* Green border */
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.edit-button:hover {
+    background-color: var(--primary-accent);
+    /* Green */
+    color: var(--neutral-dark);
+    /* Dark text */
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .info-label {
+        width: 100%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edit-button {
+        margin: 20px auto 0;
+    }
+}
