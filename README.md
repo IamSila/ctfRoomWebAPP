@@ -107,7 +107,7 @@ Main Features: After navigation to dashboard.php, there are links on the side na
 Admin Panel: To access admin panel, first navigate to dashboard.php. On the side bar we have a link which will take you to admin panel. There you will find all the features.
 
 
-The application is also hosted and can be accessed via via this link: http://1133f68.dcomhost.com/ctfRoom/dashboard.php
+# The application is also hosted and can be accessed via via this link: http://1133f68.dcomhost.com/ctfRoom/dashboard.php
 
 # Troubleshooting
 
