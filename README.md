@@ -32,9 +32,8 @@ sudo /opt/lampp/lampp start
 
 These commands should start all the required services(mysql, apache2 and ProFTPD)
 
-    Launch the XAMPP Control Panel - Navigate to http://localhost/dashboard to see the xampp interface.
-
-    Start the Apache and MySQL services
+Launch the XAMPP Control Panel - Navigate to http://localhost/dashboard to see the xampp interface.
+Start the Apache and MySQL services
 Verify they're running (the module names will turn green)
 
 ## 3. Import the Database
