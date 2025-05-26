@@ -133,7 +133,7 @@ require_once 'includes/config.php'; // Assuming you have a config file for datab
                     </div>
                 </div>
 
-                <a href="{% url 'profileUpdate' user.username %}" style="text-decoration: none;"><button class="edit-button">Edit</button></a>
+                <a href="" style="text-decoration: none;"><button class="edit-button">Edit</button></a>
             </div>
         </div>
     </section>

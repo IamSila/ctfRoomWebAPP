@@ -1,2 +1,87 @@
-# ctfRoomWebAPP
-Working on a simple web application using LAMP stack.
+# Project Overview
+
+This is a LAMP (Linux, Apache, MySQL, PHP) stack web application. The main aim of the project was to create a web application that has a user interface where they can see the scoreboard of all other players ranked from top to bottom according to points of each player. It also has an admin panel where an admin can add a judge who has the privileges of assigning marks to individual players and players can be filtered depending on the category they participate in e.g linux, binary exploitation, software Engineering. The project includes a web interface connected to a MySQL database managed through XAMPP, but I have hosted the application for easy demonstration.
+
+# Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+    XAMPP (includes Apache, MySQL, and PHP)
+
+    Git (for cloning the repository)
+
+    A modern web browser i.e chrome, brave, firefox.
+# Setup Instructions
+## 1. Clone the Repository
+bash
+
+git clone https://github.com/IamSila/ctfRoomWebAPP.git
+cd ctfRoomWebAPP
+
+## 2. Start XAMPP Services
+On linux run the commands:
+sudo /etc/init.d/Apache2 stop
+sudo /opt/lampp/lampp start
+
+These commands should start all the required services(mysql, apache2 and ProFTPD)
+
+    Launch the XAMPP Control Panel - Navigate to http://localhost/dashboard to see the xampp interface.
+
+    Start the Apache and MySQL services
+Verify they're running (the module names will turn green)
+
+## 3. Import the Database
+
+    Open phpMyAdmin in your browser: http://localhost/phpmyadmin
+
+    Create a new database named ctfroom
+
+    Navigate to Databases folder. I have provided a database named ctfroom.sql. Import the SQL file into the database you created above. It will contain all the required tables.
+
+## 4. Configure Database Connection
+
+Edit the database configuration file ( /includes/config.php in the project root):
+Edit the lines to match these ones;
+
+<?php
+$host = 'localhost';
+$dbname = 'ctfroom';
+$username = 'root';  // default XAMPP username
+$password = '';      // default XAMPP password (empty)
+?>
+
+under scoreboard.php --> responsible for showing the scoreboard table, edit the db configuration to match this
+
+$db_host = 'localhost';
+$db_name = 'ctfroom';
+$db_user = 'root';
+$db_pass = '';
+
+## 5. Deploy the Project
+
+Copy all project files to your XAMPP htdocs folder (usually C:\xampp\htdocs\ctfWebAPP on Windows or /opt/lampp/htdocs/ctfWebAPP). I used linux on my case.
+
+## 6. Access the Application
+
+Open your web browser and navigate to:
+
+http://localhost/ctfWebAPP
+
+Project Navigation
+
+Once the application is running:
+
+    dashboard.php ->Is the main entry point with overview and navigation
+
+    Login/Register ->  Authentication is not required for this project, but the files are ready.
+
+    Main Features: After navigation to dashboard.php, there are links on the side nav to core features. Admin Panel, score board . Under admin panel we have judges portal where you can add students marks and admin panel where judges can be added to the system.
+    Admin Panel: To access admin panel, first navigate to dashboard.php. On the side bar we have a link which will take you to admin panel. There you will find all the features.
+
+# Troubleshooting
+
+    Connection issues: Verify XAMPP services are running and credentials in config file match your setup
+
+    404 errors: Ensure files are in the correct htdocs subfolder
+
+    Database errors: Confirm the SQL file was imported correctly
