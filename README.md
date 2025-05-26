@@ -38,16 +38,17 @@ Verify they're running (the module names will turn green)
 
 ## 3. Import the Database
 
-    Open phpMyAdmin in your browser: http://localhost/phpmyadmin
+Open phpMyAdmin in your browser: http://localhost/phpmyadmin
 
-    Create a new database named ctfroom
+Create a new database named ctfroom
 
-    You can use the command below;
-    ```sql
-    CREATE DATABASE ctfroom;
-    ```
+You can use the command below;
 
-    Navigate to Databases folder. I have provided a database named ctfroom.sql. Import the SQL file into the database you created above. It will contain all the required tables.
+```sql
+CREATE DATABASE ctfroom;
+```
+
+Navigate to Databases folder. I have provided a database named ctfroom.sql. Import the SQL file into the database you created above(ctfroom). It will populate all the required tables.
 
 ## 4. Configure Database Connection
 
@@ -97,20 +98,21 @@ Project Navigation
 
 Once the application is running:
 
-    dashboard.php ->Is the main entry point with overview and navigation
+dashboard.php ->Is the main entry point with overview and navigation
 
-    Login/Register ->  Authentication is not required for this project, but the authentication files are ready.
+Login/Register ->  Authentication is not required for this project, but the authentication files are ready.
 
-    Main Features: After navigation to dashboard.php, there are links on the side nav to core features. Admin Panel, score board . Under admin panel we have judges portal where you can add students marks and admin panel where judges can be added to the system.
-    Admin Panel: To access admin panel, first navigate to dashboard.php. On the side bar we have a link which will take you to admin panel. There you will find all the features.
+Main Features: After navigation to dashboard.php, there are links on the side nav to core features. Admin Panel, score board . Under admin panel we have judges portal where you can add students marks and admin panel where judges can be added to the system.
+
+Admin Panel: To access admin panel, first navigate to dashboard.php. On the side bar we have a link which will take you to admin panel. There you will find all the features.
 
 
 The application is also hosted and can be accessed via via this link: http://1133f68.dcomhost.com/ctfRoom/dashboard.php
 
 # Troubleshooting
 
-    Connection issues: Verify XAMPP services are running and credentials in config file match your setup
+Connection issues: Verify XAMPP services are running and credentials in config file match your setup
 
-    404 errors: Ensure files are in the correct htdocs subfolder
+404 errors: Ensure files are in the correct htdocs subfolder
 
-    Database errors: Confirm the SQL file was imported correctly
+Database errors: Confirm the SQL file was imported correctly
