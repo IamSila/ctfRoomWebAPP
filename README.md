@@ -72,13 +72,13 @@ $db_user = 'root';
 $db_pass = '';
 ```
 
-under admin.php --> responsible for adding judges into the system, under line 201, edit the db configuration to match this
+under admin.php --> responsible for adding judges into the system, in line 201, edit the db configuration to match this
 
 ```php
  $conn = new mysqli('localhost', 'root', '', 'ctfroom');
 ```
 
-under judgesPortal.php --> responsible for assigning points to the players, under line 203, edit the db configuration to match this
+under judgesPortal.php --> responsible for assigning points to the players, in line 203, edit the db configuration to match this
 
 ```php
 $conn = new mysqli('localhost', 'root', '', 'ctfroom');
