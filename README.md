@@ -45,7 +45,7 @@ Create a new database named ctfroom
 You can use the command below;
 
 ```sql
-CREATE DATABASE ctfroom;
+CREATE DATABASE IF NOT EXISTS ctfroom;
 ```
 
 Navigate to Databases folder. I have provided a database named ctfroom.sql. Import the SQL file into the database you created above(ctfroom). It will populate all the required tables.
