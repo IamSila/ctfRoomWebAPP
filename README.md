@@ -17,9 +17,9 @@ Before you begin, ensure you have the following installed:
     A modern web browser i.e chrome, brave, firefox.
 # Setup Instructions
 ## 1. Clone the Repository
-bash
 
 git clone https://github.com/IamSila/ctfRoomWebAPP.git
+
 cd ctfRoomWebAPP
 
 ## 2. Start XAMPP Services
