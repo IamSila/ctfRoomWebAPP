@@ -23,9 +23,12 @@ git clone https://github.com/IamSila/ctfRoomWebAPP.git
 cd ctfRoomWebAPP
 
 ## 2. Start XAMPP Services
-On linux run the commands:
+On linux run the commands
+
+```bash
 sudo /etc/init.d/Apache2 stop
 sudo /opt/lampp/lampp start
+```
 
 These commands should start all the required services(mysql, apache2 and ProFTPD)
 
@@ -40,6 +43,11 @@ Verify they're running (the module names will turn green)
 
     Create a new database named ctfroom
 
+    You can use the command below;
+    ```sql
+    CREATE DATABASE ctfroom;
+    ```
+
     Navigate to Databases folder. I have provided a database named ctfroom.sql. Import the SQL file into the database you created above. It will contain all the required tables.
 
 ## 4. Configure Database Connection
@@ -47,28 +55,34 @@ Verify they're running (the module names will turn green)
 Edit the database configuration file ( /includes/config.php in the project root):
 Edit the lines to match these ones;
 
-<?php
+```php
 $host = 'localhost';
 $dbname = 'ctfroom';
 $username = 'root';  // default XAMPP username
 $password = '';      // default XAMPP password (empty)
-?>
+
+```
 
 under scoreboard.php --> responsible for showing the scoreboard table, edit the db configuration to match this
 
+```php
 $db_host = 'localhost';
 $db_name = 'ctfroom';
 $db_user = 'root';
 $db_pass = '';
+```
 
 under admin.php --> responsible for adding judges into the system, under line 201, edit the db configuration to match this
 
+```php
  $conn = new mysqli('localhost', 'root', '', 'ctfroom');
+```
 
 under judgesPortal.php --> responsible for assigning points to the players, under line 203, edit the db configuration to match this
 
+```php
 $conn = new mysqli('localhost', 'root', '', 'ctfroom');
-
+```
 
 ## 5. Deploy the Project
 
