@@ -78,7 +78,7 @@ Copy all project files to your XAMPP htdocs folder (usually C:\xampp\htdocs\ctfR
 
 Open your web browser and navigate to:
 
-http://localhost/ctfRoomWebAPP
+http://localhost/ctfRoomWebAPP/dashboard.php
 
 Project Navigation
 
