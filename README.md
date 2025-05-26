@@ -72,13 +72,13 @@ $conn = new mysqli('localhost', 'root', '', 'ctfroom');
 
 ## 5. Deploy the Project
 
-Copy all project files to your XAMPP htdocs folder (usually C:\xampp\htdocs\ctfWebAPP on Windows or /opt/lampp/htdocs/ctfWebAPP). I used linux on my case.
+Copy all project files to your XAMPP htdocs folder (usually C:\xampp\htdocs\ctfRoomWebAPP on Windows or /opt/lampp/htdocs/ctfRoomWebAPP). I used linux on my case.
 
 ## 6. Access the Application
 
 Open your web browser and navigate to:
 
-http://localhost/ctfWebAPP
+http://localhost/ctfRoomWebAPP
 
 Project Navigation
 
