@@ -118,13 +118,7 @@ Connection issues: Verify XAMPP services are running and credentials in config f
 Database errors: Confirm the SQL file was imported correctly
 
 
-# What to add to the system
-1. Add a challenges section where players can participate in challenges and add points to their score board automatically.
-2. Work on the profile page and add a page for updating the profile page
-3. Add a user specific button that fetches their scores from the database.
-4. Integrate secure login and profile registration pages.
-
-Database Structure Choices;
+# Database Structure Choices;
 
 1. Used a simple users table with essential columns (id, username, first_name, last_name, category, points)
 
@@ -134,10 +128,16 @@ Database Structure Choices;
 
 4. Normalized structure for basic user data storage
 
-PHP Constructs Used;
+## PHP Constructs Used;
 
 1. Prepared statements (prepare() + bindParam()) for security against SQL injection
 
 2. try-catch blocks for robust error handling
 
 3. fetchAll(PDO::FETCH_ASSOC) for clean array output
+
+# What to add to the system
+1. Add a challenges section where players can participate in challenges and add points to their score board automatically.
+2. Work on the profile page and add a page for updating the profile page
+3. Add a user specific button that fetches their scores from the database.
+4. Integrate secure login and profile registration pages.
