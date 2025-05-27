@@ -21,7 +21,9 @@ Before you begin, ensure you have the following installed:
 # Setup Instructions
 ## 1. Clone the Repository
 
+```bash
 git clone https://github.com/IamSila/ctfRoomWebAPP.git
+```
 
 cd ctfRoomWebAPP
 
