@@ -2,6 +2,9 @@
 
 This is a LAMP (Linux, Apache, MySQL, PHP) stack web application. The main aim of the project was to create a web application that has a user interface where they can see the scoreboard of all other players ranked from top to bottom according to points of each player. It also has an admin panel where an admin can add a judge who has the privileges of assigning marks to individual players and players can be filtered depending on the category they participate in e.g linux, binary exploitation, software Engineering. The project includes a web interface connected to a MySQL database managed through XAMPP, but I have hosted the application for easy demonstration.
 
+# NOTE: AFTER ADDING A JUDGE, CLICK FETCH BUTTON TO VIEW ALL AVAILABLE JUDGES.
+# NOTE2: AFTER ASSIGNING POINTS TO PLAYERS, UNDER CATEGORIES, CLICK FILTER TO VIEW ALL PLAYERS AND THEIR RESPECTIVE ASSIGNED POINTS.
+
 # application link: http://1133f68.dcomhost.com/ctfRoom/dashboard.php
 
 # Manual configuration
@@ -105,6 +108,7 @@ Login/Register ->  Authentication is not required for this project, but the auth
 Main Features: After navigation to dashboard.php, there are links on the side nav to core features. Admin Panel, score board . Under admin panel we have judges portal where you can add students marks and admin panel where judges can be added to the system.
 
 Admin Panel: To access admin panel, first navigate to dashboard.php. On the side bar we have a link which will take you to admin panel. There you will find all the features.
+
 
 
 # The application is also hosted and can be accessed via via this link: http://1133f68.dcomhost.com/ctfRoom/dashboard.php
