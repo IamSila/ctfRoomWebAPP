@@ -23,9 +23,10 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/IamSila/ctfRoomWebAPP.git
+cd ctfRoomWebAPP
 ```
 
-cd ctfRoomWebAPP
+
 
 ## 2. Start XAMPP Services
 On linux run the commands
